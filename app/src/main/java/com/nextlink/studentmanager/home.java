@@ -45,10 +45,6 @@ public class home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-//        but1 = (Button) findViewById(R.id.user_but);
-//        but2 = findViewById(R.id.timetable_but);
-//        but3 = findViewById(R.id.attendance_but);
-//        but4 = findViewById(R.id.to_do_but);
          user = findViewById(R.id.user_name);
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -92,10 +88,6 @@ public class home extends AppCompatActivity {
         time = DateFormat.format("EEEE", date.getTime());
         db = new DbHelper(getApplication());
         myList =db.getWeek(time.toString());
-//        while(j<myList.size()){
-//            hlist.add(myList.get(j));
-//            j++;
-//        }
 
 
         while(i<myList.size()){
@@ -126,15 +118,7 @@ public class home extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void run(View view) {
-//        DbHelper db;
-//        db = new DbHelper(getBaseContext());
-//
-//         subname =db.sub_list();
-//        //x=subname.get(0).toString();
-//        Intent intent = new Intent(this, attendence_details.class);
-//        startActivity(intent);
-    }
+
 
     public void onBackPressed(){
         Intent a = new Intent(Intent.ACTION_MAIN);

@@ -24,7 +24,6 @@
                 android:layout_gravity="center"
                 android:drawableLeft="@drawable/ic_person_black_24dp"
                 android:fontFamily="@font/titillium_web_bold"
-                android:onClick="run"
                 android:paddingTop="50dp"
                 android:textColor="@color/white"
                 android:textSize="38dp"

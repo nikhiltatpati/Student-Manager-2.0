@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AbsListView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -43,8 +44,14 @@ public class Add_Subject extends AppCompatActivity {
     private void setupAdapter() {
         db = new DbHelper(context);
         listView = findViewById(R.id.sublist);
+        ImageView img=findViewById(R.id.imageView4);
         adapter = new com.nextlink.studentmanager.adapters.Add_Subject(Add_Subject.this, listView, R.layout.listview_subjects_adapter, db.getSubject());
         listView.setAdapter(adapter);
+        if(!adapter.isEmpty()){
+            img.setVisibility(View.INVISIBLE);
+        }
+
+
     }
 
     private void setupListViewMultiSelect() {

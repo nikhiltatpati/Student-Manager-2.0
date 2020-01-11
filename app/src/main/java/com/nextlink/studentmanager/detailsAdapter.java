@@ -25,7 +25,7 @@ int n;
         private Context mCtx;
 
         //we are storing all the products in a list
-        private List<attmodel> detailList;
+        public static List<attmodel> detailList;
 
         //getting the context and product list with constructor
         public detailsAdapter(Context mCtx, List<attmodel> detailList) {

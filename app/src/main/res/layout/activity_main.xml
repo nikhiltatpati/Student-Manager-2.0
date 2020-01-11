@@ -87,6 +87,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.553"
-        app:srcCompat="@drawable/logi_image2"
+        app:srcCompat="@drawable/login"
         tools:layout_marginTop="60dp" />
 </android.support.constraint.ConstraintLayout>

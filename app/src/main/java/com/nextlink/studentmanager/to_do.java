@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -30,7 +31,7 @@ public class to_do extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_to_do);
-
+        ImageView img=findViewById(R.id.imageView6);
         mHelper = new DbHelper(this);
         mTaskListView = (ListView) findViewById(R.id.list_todo);
 

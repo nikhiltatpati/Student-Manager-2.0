@@ -7,6 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.nextlink.studentmanager.Attendence.Attendence_manage;
@@ -33,6 +35,10 @@ public class Timeline_details extends AppCompatActivity {
         timeline_adapter adapter = new timeline_adapter(this, Attendence_manage.subname);
 
         recyclerView.setAdapter(adapter);
+        ImageView img=findViewById(R.id.imageView5);
+        if(adapter.getItemCount()==0){
+            img.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override

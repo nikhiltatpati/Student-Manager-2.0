@@ -52,16 +52,5 @@ package com.nextlink.studentmanager;
         }
 
 
-        //        public String getStatus() {
-//            return status;
-//        }
-
-//        public double getPrice() {
-//            return price;
-//        }
-//
-//        public int getImage() {
-//            return image;
-//        }
     }
 
